@@ -35,5 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-dev.db
-/migrations/*
+prisma/dev.db
+prisma/migrations/*
