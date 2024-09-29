@@ -10,7 +10,7 @@ import { Label } from "@radix-ui/react-label";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const page = ({ params }: { params: { messageId: string } }) => {
+const Page = ({ params }: { params: { messageId: string } }) => {
   const [message, setMessage] = useState<SingleMessageType>({});
   const [contentMessage, setContentMessage] = useState(message.message);
   const [contentName, setContentName] = useState(message.name);
@@ -180,4 +180,4 @@ const page = ({ params }: { params: { messageId: string } }) => {
   );
 };
 
-export default page;
+export default Page;

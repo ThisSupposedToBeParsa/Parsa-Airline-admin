@@ -25,7 +25,7 @@ const Account = () => {
 
   useEffect(() => {
     const setData = async () => {
-      const data = await getUser(cookies.user?.email);
+      const data = await getUser(cookies.user?.email!);
       setUser(data!);
       setUsername(data?.username!);
       setEmail(data?.email!);
